@@ -1,17 +1,10 @@
 import React from 'react';
 
-const userOutput = () => {
+const userOutput = (props) => {
     return (
         <div>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nam eget mauris eget erat consectetur scelerisque. 
-                Proin id urna at dolor congue faucibus id ac tortor. 
-                Sed a quam eget dolor consequat varius ut vitae turpis. 
-                Aenean dui eros, consectetur eu tristique sit amet, 
-                scelerisque at ipsum. Vestibulum tincidunt accumsan 
-                velit quis finibus. Integer in ullamcorper metus. 
-                Nunc in diam mi.
+                Username: {props.userName}
             </p>
             <p>
                 Vivamus aliquam mollis leo a vestibulum. Pellentesque euismod 
@@ -23,5 +16,7 @@ const userOutput = () => {
                 aliquam odio. Nunc a nibh sed diam pretium malesuada nec id justo.
             </p>
         </div>
-    )
-}
+    );
+};
+
+export default userOutput;
